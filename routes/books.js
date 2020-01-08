@@ -14,9 +14,10 @@ inputStream.on('end',function () {
 var express = require('express');
 var router = express.Router();
 
-var maxId = 2;
+var maxId = 3;
 var books = [{_id: 1, name: "book1", price: 100},
-    {_id: 2, name: "book2", price: 200}];
+    {_id: 2, name: "book2", price: 200},
+    {_id: 3, name: "book3", price: 300}];
 
 router.route('/')
     .get(function (req, res) {
